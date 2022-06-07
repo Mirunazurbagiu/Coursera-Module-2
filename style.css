@@ -1,0 +1,173 @@
+ * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 200%;
+    text-align: center;
+    margin: 6% 0;
+}
+
+.menu {
+    padding: 0 3%;
+}
+
+.menu:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.recipe {
+    background-color: rgb(250, 200, 200);
+    border: 2px solid #000;
+}
+
+.title {
+    border: 1px solid;
+    border-top: none;
+    border-right: none;
+    display: inline-block;
+    float: right;
+    font-size: 125%;
+    font-weight: bold;
+    padding: 2px 0;
+    text-align: center;
+    width: 33.3%;
+}
+
+.title.chicken {
+    background-color: rgba(253, 228, 173, 0.79);
+}
+
+.title.beef {
+    background-color: rgba(255, 0, 0, 0.582);
+}
+
+.title.sushi {
+    background-color: rgba(115, 202, 23, 0.456);
+}
+
+.description {
+    clear: both;
+    padding: 3% 3% 1.5% 3%;
+    margin: 0;
+}
+
+@media (min-width: 992px) {
+    .recipe {
+        float: left;
+        margin-right: 3%;
+        width: 31.3%;
+    }
+
+    .recipe:last-child {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .recipe {
+        float:left;
+        width: 48.5%;
+    }
+
+    .recipe:first-child {
+        margin-right: 3%;
+    }
+
+    .recipe:last-child {
+        margin-top: 3%;
+        width: 100%;
+    }
+
+    .recipe:last-child .description {
+        clear: both;
+        padding: 1.5%;
+    }
+
+    @media (max-width: 767px) {
+        .recipe {
+            margin-bottom: 3%;
+        }
+    }
+}
+
+/*
+.section {
+    background-color: lightblue;
+    border: 3px solid;
+    width: 100%;
+    height: 130px;
+    margin:2px;
+    overflow: hidden;
+}
+#chickendiv {
+    float:left;
+    width: 33%;
+}
+#beefdiv {
+    float:left;
+    width: 33%;
+}
+#sushidiv {
+    float: left;
+    width: 33%;
+}
+
+.title {
+    position:relative;
+    display:inline;
+}
+
+#chicken {
+    float:right;
+    width: 150px;
+    border: 3px solid;
+    background-color: pink;
+}
+
+#beef {
+    float: right;
+    width: 150px;
+    border: 3px solid;
+    background-color: red;
+}
+#sushi {
+    float: right;
+    width: 150px;
+    border: 3px solid;
+    background-color: salmon;
+}
+
+/*******************Large devices only*************/
+
+@media (min-width: 992px) {
+    #chickendiv, #beefdiv, #sushidiv {
+        float: left;
+        width: 33%;
+    }
+}
+
+/*******************Medium devices only*************/
+@media (min-width: 768px) and (max-width: 991px) {
+ #chickendiv, #beefdiv {
+    width: 49%;
+ } 
+ #sushidiv {
+     width: 100%;
+ }
+}
+
+/*******************Small devices only*************/
+@media (max-width: 767px) {
+        #chickendiv, #beefdiv,#sushidiv {
+        width: 100%;
+ }
+} */
